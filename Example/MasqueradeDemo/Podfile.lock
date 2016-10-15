@@ -1,0 +1,16 @@
+PODS:
+  - Masquerade (0.1.0)
+
+DEPENDENCIES:
+  - Masquerade (from `../../`)
+
+EXTERNAL SOURCES:
+  Masquerade:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  Masquerade: c4aca48df92b85d02cd9bbc67004ef8e7c209ab3
+
+PODFILE CHECKSUM: 70f0594643cd75996078d6787b87b77f9c0ee2b5
+
+COCOAPODS: 1.1.0.rc.3
