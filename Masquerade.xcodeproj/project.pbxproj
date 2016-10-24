@@ -11,6 +11,7 @@
 		BD218F8E1DB6006500DFAECA /* Hue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F8D1DB6006500DFAECA /* Hue.framework */; };
 		BD218F901DB600C600DFAECA /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F8F1DB600C600DFAECA /* Cartography.framework */; };
 		BD218F921DB6010200DFAECA /* Fashion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F911DB6010200DFAECA /* Fashion.framework */; };
+		BD59250B1DBE8CBF007FDC4E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59250A1DBE8CBF007FDC4E /* ListView.swift */; };
 		BD6F86A71DB822BD00222E22 /* Item+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */; };
 		BD6F86A81DB822BD00222E22 /* Item+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */; };
 		BD86BCB51DB914F00072B429 /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD86BCB41DB914F00072B429 /* ImageListView.swift */; };
@@ -51,6 +52,7 @@
 		BD218F8D1DB6006500DFAECA /* Hue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hue.framework; path = Carthage/Build/iOS/Hue.framework; sourceTree = "<group>"; };
 		BD218F8F1DB600C600DFAECA /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
 		BD218F911DB6010200DFAECA /* Fashion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fashion.framework; path = Carthage/Build/iOS/Fashion.framework; sourceTree = "<group>"; };
+		BD59250A1DBE8CBF007FDC4E /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+Extensions.swift"; sourceTree = "<group>"; };
 		BD86BCB41DB914F00072B429 /* ImageListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
 		BDD9ABD01DB55930005D8C04 /* InfoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoListView.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				BDE85EEE1DB3F2E300761669 /* ToggleListView.swift */,
 				BDD9ABD01DB55930005D8C04 /* InfoListView.swift */,
 				BD86BCB41DB914F00072B429 /* ImageListView.swift */,
+				BD59250A1DBE8CBF007FDC4E /* ListView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				BDE85F071DB4C43C00761669 /* CoreListView.swift in Sources */,
 				BD6F86A71DB822BD00222E22 /* Item+Extensions.swift in Sources */,
 				BDE85EEF1DB3F2E300761669 /* ToggleListView.swift in Sources */,
+				BD59250B1DBE8CBF007FDC4E /* ListView.swift in Sources */,
 				D5C629871C3A89A8007F7B7C /* Shared.swift in Sources */,
 				BD86BCB51DB914F00072B429 /* ImageListView.swift in Sources */,
 				BDD9ABD11DB55930005D8C04 /* InfoListView.swift in Sources */,
