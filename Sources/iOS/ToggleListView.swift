@@ -29,6 +29,7 @@ open class ToggleListView: UITableViewCell, SpotConfigurable {
   open lazy var separatorView = UIView()
   open lazy var toggleView: UISwitch = {
     var switchView = UISwitch()
+    switchView.layer.zPosition = 1
     switchView.isOn = true
     switchView.addTarget(self, action: #selector(switchValueDidChange(_:)), for: .valueChanged)
     return switchView
