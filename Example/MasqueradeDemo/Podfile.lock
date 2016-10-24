@@ -1,16 +1,59 @@
 PODS:
-  - Masquerade (0.1.0)
+  - Brick (2.0.1):
+    - Tailor (~> 2.0)
+  - Cache (2.0.0):
+    - CryptoSwift
+  - Cartography (1.0.1)
+  - Compass (4.0.0)
+  - CryptoSwift (0.6.0)
+  - Fashion (2.0.0)
+  - Hue (2.0.0)
+  - Imaginary (1.0.1):
+    - Cache (~> 2.0)
+  - Masquerade (0.1.0):
+    - Brick (~> 2.0)
+    - Cartography (~> 1.0)
+    - Fashion (~> 2.0)
+    - Hue (~> 2.0)
+    - Imaginary (~> 1.0)
+    - Spots (~> 5.0)
+  - Spots (5.1.0):
+    - Brick (~> 2.0)
+    - Cache (~> 2.0)
+    - CryptoSwift (= 0.6.0)
+    - Tailor (~> 2.0)
+  - Tailor (2.0.1)
 
 DEPENDENCIES:
+  - Brick (from `~/Code/Brick`)
+  - Cartography
+  - Compass (~> 4.0)
+  - Fashion (~> 2.0)
+  - Hue (~> 2.0)
   - Masquerade (from `../../`)
+  - Spots (from `~/Code/Spots`)
 
 EXTERNAL SOURCES:
+  Brick:
+    :path: "~/Code/Brick"
   Masquerade:
     :path: "../../"
+  Spots:
+    :path: "~/Code/Spots"
 
 SPEC CHECKSUMS:
-  Masquerade: c4aca48df92b85d02cd9bbc67004ef8e7c209ab3
+  Brick: 76695ebcf3c3a581b0159911c63cd804f63cf02a
+  Cache: 86c7a082ce5a734df15a103581d81d29002a171e
+  Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
+  Compass: b7802d133b95ffde747515f0e84ed8b5153c3d53
+  CryptoSwift: 4a599b7241b8d3b857d6e2c28867d0bd5d1aae24
+  Fashion: f5cd202dcd048edd35217349527ac446d0853cd7
+  Hue: 2b317616a04cc5d7cccdb024c88e6d143e2b9cf1
+  Imaginary: f37fb0dd81a5881cf7a8232d7854e8c5a689b054
+  Masquerade: a6e8aea8f5dcaf699177a118589e431b56c88890
+  Spots: 72d6f196b77d5acd6747d992c4d741f44c6695ee
+  Tailor: faa9ec5be402056be8ec67c0e461f00251d19191
 
-PODFILE CHECKSUM: 70f0594643cd75996078d6787b87b77f9c0ee2b5
+PODFILE CHECKSUM: a9b7e28664355daa3757c7692883c3a4bf4a60ea
 
-COCOAPODS: 1.1.0.rc.3
+COCOAPODS: 1.1.1

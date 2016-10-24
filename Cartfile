@@ -1,0 +1,5 @@
+github "hyperoslo/Spots" ~> 5.0
+github "hyperoslo/Hue" ~> 2.0
+github "robb/Cartography" ~> 1.0
+github "vadymmarkov/Fashion" ~> 2.0
+github "hyperoslo/Imaginary" ~> 1.0

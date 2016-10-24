@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A8889FDC762F0F2FFFDFF18 /* Pods_MasqueradeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6058EA7CBE21033C608E8BEF /* Pods_MasqueradeDemo.framework */; };
+		5464D5C4474D3BB145B52447 /* Pods_MasqueradeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01509D12944958137FA49A1 /* Pods_MasqueradeDemo.framework */; };
+		BD86BCB81DB918640072B429 /* ImageListView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD86BCB71DB918640072B429 /* ImageListView+Extensions.swift */; };
+		BDD9ABD31DB5FBC9005D8C04 /* InfoListView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9ABD21DB5FBC9005D8C04 /* InfoListView+Extensions.swift */; };
+		BDE85EFA1DB3F53100761669 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE85EF41DB3F53100761669 /* AppDelegate.swift */; };
+		BDE85EFE1DB3F53100761669 /* MasqueradeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE85EF91DB3F53100761669 /* MasqueradeConfigurator.swift */; };
+		BDE85F011DB3F54E00761669 /* ToggleListView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE85F001DB3F54E00761669 /* ToggleListView+Extensions.swift */; };
+		BDE85F051DB3F70D00761669 /* Masqueradable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE85F041DB3F70D00761669 /* Masqueradable.swift */; };
+		BDE85F091DB4C47800761669 /* CoreListView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE85F081DB4C47800761669 /* CoreListView+Extensions.swift */; };
 		D5C7F74E1C3BC9CE008CDDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F74C1C3BC9CE008CDDBA /* LaunchScreen.storyboard */; };
 		D5C7F75B1C3BCA1E008CDDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */; };
-		D5C7F75C1C3BCA1E008CDDBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */; };
-		D5C7F75D1C3BCA1E008CDDBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C7F75A1C3BCA1E008CDDBA /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6058EA7CBE21033C608E8BEF /* Pods_MasqueradeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MasqueradeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		946BE92EA50457911E4A6E41 /* Pods-MasqueradeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasqueradeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasqueradeDemo/Pods-MasqueradeDemo.release.xcconfig"; sourceTree = "<group>"; };
-		BA2111EC43DF6D196C7E19E7 /* Pods-MasqueradeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasqueradeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasqueradeDemo/Pods-MasqueradeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		56ED2E26E18A02E3B4671142 /* Pods-MasqueradeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasqueradeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasqueradeDemo/Pods-MasqueradeDemo.release.xcconfig"; sourceTree = "<group>"; };
+		BD86BCB71DB918640072B429 /* ImageListView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ImageListView+Extensions.swift"; sourceTree = "<group>"; };
+		BDD9ABD21DB5FBC9005D8C04 /* InfoListView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InfoListView+Extensions.swift"; sourceTree = "<group>"; };
+		BDE85EF41DB3F53100761669 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDE85EF91DB3F53100761669 /* MasqueradeConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasqueradeConfigurator.swift; sourceTree = "<group>"; };
+		BDE85F001DB3F54E00761669 /* ToggleListView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ToggleListView+Extensions.swift"; sourceTree = "<group>"; };
+		BDE85F041DB3F70D00761669 /* Masqueradable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Masqueradable.swift; sourceTree = "<group>"; };
+		BDE85F081DB4C47800761669 /* CoreListView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreListView+Extensions.swift"; sourceTree = "<group>"; };
+		C01509D12944958137FA49A1 /* Pods_MasqueradeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MasqueradeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C478BDEF65062EC4F4022E20 /* Pods-MasqueradeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasqueradeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasqueradeDemo/Pods-MasqueradeDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D5C7F7401C3BC9CE008CDDBA /* MasqueradeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasqueradeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C7F74D1C3BC9CE008CDDBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5C7F74F1C3BC9CE008CDDBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5C7F7571C3BCA1E008CDDBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D5C7F75A1C3BCA1E008CDDBA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,26 +41,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A8889FDC762F0F2FFFDFF18 /* Pods_MasqueradeDemo.framework in Frameworks */,
+				5464D5C4474D3BB145B52447 /* Pods_MasqueradeDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		168B0774DC11FB120E3152BB /* Frameworks */ = {
+		BDE85EF21DB3F53100761669 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				6058EA7CBE21033C608E8BEF /* Pods_MasqueradeDemo.framework */,
+				BDE85EF31DB3F53100761669 /* Classes */,
+				BDE85EFF1DB3F54200761669 /* Extensions */,
+				BDE85F021DB3F57000761669 /* Protocols */,
+				BDE85EF71DB3F53100761669 /* Structs */,
 			);
-			name = Frameworks;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		91AF057D08ACF29919CC379E /* Pods */ = {
+		BDE85EF31DB3F53100761669 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BA2111EC43DF6D196C7E19E7 /* Pods-MasqueradeDemo.debug.xcconfig */,
-				946BE92EA50457911E4A6E41 /* Pods-MasqueradeDemo.release.xcconfig */,
+				BDE85EF41DB3F53100761669 /* AppDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BDE85EF71DB3F53100761669 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				BDE85EF91DB3F53100761669 /* MasqueradeConfigurator.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		BDE85EFF1DB3F54200761669 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BDE85F001DB3F54E00761669 /* ToggleListView+Extensions.swift */,
+				BDE85F081DB4C47800761669 /* CoreListView+Extensions.swift */,
+				BDD9ABD21DB5FBC9005D8C04 /* InfoListView+Extensions.swift */,
+				BD86BCB71DB918640072B429 /* ImageListView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BDE85F021DB3F57000761669 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BDE85F041DB3F70D00761669 /* Masqueradable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CD631B05B3DBB36A47667911 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C478BDEF65062EC4F4022E20 /* Pods-MasqueradeDemo.debug.xcconfig */,
+				56ED2E26E18A02E3B4671142 /* Pods-MasqueradeDemo.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -60,8 +108,8 @@
 			children = (
 				D5C7F7421C3BC9CE008CDDBA /* MasqueradeDemo */,
 				D5C7F7411C3BC9CE008CDDBA /* Products */,
-				91AF057D08ACF29919CC379E /* Pods */,
-				168B0774DC11FB120E3152BB /* Frameworks */,
+				CD631B05B3DBB36A47667911 /* Pods */,
+				E4E18AB3386074E78BE52213 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,8 +124,8 @@
 		D5C7F7421C3BC9CE008CDDBA /* MasqueradeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BDE85EF21DB3F53100761669 /* Sources */,
 				D5C7F7561C3BCA1E008CDDBA /* Resources */,
-				D5C7F7581C3BCA1E008CDDBA /* Sources */,
 				D5C7F7551C3BC9EA008CDDBA /* Supporting Files */,
 			);
 			path = MasqueradeDemo;
@@ -100,13 +148,12 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		D5C7F7581C3BCA1E008CDDBA /* Sources */ = {
+		E4E18AB3386074E78BE52213 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D5C7F7591C3BCA1E008CDDBA /* AppDelegate.swift */,
-				D5C7F75A1C3BCA1E008CDDBA /* ViewController.swift */,
+				C01509D12944958137FA49A1 /* Pods_MasqueradeDemo.framework */,
 			);
-			path = Sources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,12 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5C7F7521C3BC9CE008CDDBA /* Build configuration list for PBXNativeTarget "MasqueradeDemo" */;
 			buildPhases = (
-				BAC540DD3A1148E6635592AC /* [CP] Check Pods Manifest.lock */,
+				6BBA9AD77C5F634F05585DA6 /* [CP] Check Pods Manifest.lock */,
 				D5C7F73C1C3BC9CE008CDDBA /* Sources */,
 				D5C7F73D1C3BC9CE008CDDBA /* Frameworks */,
 				D5C7F73E1C3BC9CE008CDDBA /* Resources */,
-				8ABA7AB5B7B04BCC8091705A /* [CP] Embed Pods Frameworks */,
-				B688F19552CE7C5339FB220D /* [CP] Copy Pods Resources */,
+				A55F074241E14BEFDE2766E4 /* [CP] Embed Pods Frameworks */,
+				37601B4ADEA174D1A5FEB88D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,11 +186,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Hyper Interaktiv AS";
 				TargetAttributes = {
 					D5C7F73F1C3BC9CE008CDDBA = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -178,22 +226,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		8ABA7AB5B7B04BCC8091705A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasqueradeDemo/Pods-MasqueradeDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B688F19552CE7C5339FB220D /* [CP] Copy Pods Resources */ = {
+		37601B4ADEA174D1A5FEB88D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -208,7 +241,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasqueradeDemo/Pods-MasqueradeDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BAC540DD3A1148E6635592AC /* [CP] Check Pods Manifest.lock */ = {
+		6BBA9AD77C5F634F05585DA6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -223,6 +256,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		A55F074241E14BEFDE2766E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MasqueradeDemo/Pods-MasqueradeDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -230,8 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C7F75D1C3BCA1E008CDDBA /* ViewController.swift in Sources */,
-				D5C7F75C1C3BCA1E008CDDBA /* AppDelegate.swift in Sources */,
+				BDE85F051DB3F70D00761669 /* Masqueradable.swift in Sources */,
+				BDE85F091DB4C47800761669 /* CoreListView+Extensions.swift in Sources */,
+				BDD9ABD31DB5FBC9005D8C04 /* InfoListView+Extensions.swift in Sources */,
+				BDE85F011DB3F54E00761669 /* ToggleListView+Extensions.swift in Sources */,
+				BDE85EFA1DB3F53100761669 /* AppDelegate.swift in Sources */,
+				BD86BCB81DB918640072B429 /* ImageListView+Extensions.swift in Sources */,
+				BDE85EFE1DB3F53100761669 /* MasqueradeConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +315,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -290,6 +345,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -306,8 +362,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -326,31 +384,37 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		D5C7F7531C3BC9CE008CDDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA2111EC43DF6D196C7E19E7 /* Pods-MasqueradeDemo.debug.xcconfig */;
+			baseConfigurationReference = C478BDEF65062EC4F4022E20 /* Pods-MasqueradeDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MasqueradeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Masquerade.MasqueradeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		D5C7F7541C3BC9CE008CDDBA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 946BE92EA50457911E4A6E41 /* Pods-MasqueradeDemo.release.xcconfig */;
+			baseConfigurationReference = 56ED2E26E18A02E3B4671142 /* Pods-MasqueradeDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MasqueradeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.Masquerade.MasqueradeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
