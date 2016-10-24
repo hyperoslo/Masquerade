@@ -16,6 +16,10 @@ open class ListView: UITableViewCell, SpotConfigurable {
   }
 
   public func configure(_ item: inout Item) {
+    if let action = item.action, !action.isEmpty {
+      accessoryType = .disclosureIndicator
+    }
+
     textLabel?.text = item.title
     detailTextLabel?.text = item.subtitle
 
@@ -29,6 +33,7 @@ open class ListView: UITableViewCell, SpotConfigurable {
   }
 
   override open func prepareForReuse() {
+    accessoryType = .none
     textLabel?.text = nil
     detailTextLabel?.text = nil
     imageView?.image = nil
