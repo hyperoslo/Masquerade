@@ -1,7 +1,6 @@
 import UIKit
 import Spots
 import Brick
-import Masquerade
 
 open class ImageListView: UITableViewCell, SpotConfigurable {
   /// The perferred view size of the view.
