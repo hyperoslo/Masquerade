@@ -8,7 +8,7 @@ import UIKit
 open class CoreListView: ListSpotCell {
 
   var topMargin: CGFloat = 5
-  var leftMargin: CGFloat = 5
+  var leftMargin: CGFloat = 7.5
   var imageMargin: CGFloat = 5
 
   struct Meta: Mappable {
