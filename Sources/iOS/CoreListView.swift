@@ -71,7 +71,9 @@ open class CoreListView: ListSpotCell {
     subtitleLabel.text = item.subtitle
     extraTextLabel.text = item.text
 
-    if let action = item.action { accessoryType = .disclosureIndicator }
+    if let action = item.action, !action.isEmpty {
+      accessoryType = .disclosureIndicator
+    }
 
     if let url = URL(string: item.image), !item.image.isEmpty {
       layoutImageView()
