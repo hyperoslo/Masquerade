@@ -7,7 +7,7 @@ enum InputFieldAlignment: String {
   case center = "center", left = "left"
 }
 
-class InputFieldListView: UITableViewCell, SpotConfigurable {
+open class InputFieldListView: UITableViewCell, SpotConfigurable {
 
   public enum KeyboardType: String {
     case Number = "number"
