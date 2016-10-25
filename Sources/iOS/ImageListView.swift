@@ -1,17 +1,30 @@
 import UIKit
 import Spots
 import Brick
+import Tailor
 
 open class ImageListView: UITableViewCell, SpotConfigurable {
+
+  struct Meta: Mappable {
+    var gradient: Bool = false
+    var contentMode: Int = UIViewContentMode.scaleAspectFill.rawValue
+
+    init(_ map: [String : Any]) {
+      gradient <- map.property("gradient")
+      contentMode <- map.property("contentMode")
+    }
+  }
+
   /// The perferred view size of the view.
   public var preferredViewSize: CGSize = CGSize(width: 0, height: 44)
 
-  var leftMargin: CGFloat = 5
+  var bottomMargin: CGFloat = 15
+  var leftMargin: CGFloat = 15
 
   lazy var gradientLayer: CAGradientLayer = {
     let layer = CAGradientLayer()
     layer.colors = [UIColor.black.cgColor, UIColor.clear.cgColor]
-    layer.locations = [0.3, 1.0]
+    layer.locations = [0.4, 1.0]
     return layer
   }()
 
@@ -21,8 +34,6 @@ open class ImageListView: UITableViewCell, SpotConfigurable {
     imageView?.layer.zPosition = 0
     textLabel?.layer.zPosition = 1
     detailTextLabel?.layer.zPosition = 2
-    imageView?.layer.mask = gradientLayer
-    imageView?.layer.masksToBounds = true
   }
 
   required public init?(coder aDecoder: NSCoder) {
@@ -33,12 +44,26 @@ open class ImageListView: UITableViewCell, SpotConfigurable {
   ///
   /// - parameter item: A inout Item so that the ItemConfigurable object can configure the view model width and height based on its UI components
   public func configure(_ item: inout Item) {
-    guard let url = URL(string: item.image), !item.image.isEmpty else { return }
+    let meta: Meta = item.metaInstance()
+
     textLabel?.text = item.title
     detailTextLabel?.text = item.subtitle
     [textLabel, detailTextLabel].forEach { $0?.sizeToFit() }
-    imageView?.setImage(url: url) { [weak self] _ in
-      self?.layoutSubviews()
+    imageView?.layer.mask = meta.gradient ? gradientLayer : nil
+
+    if let contentMode = UIViewContentMode.init(rawValue: meta.contentMode) {
+      imageView?.contentMode = contentMode
+    }
+
+    if !item.image.isEmpty {
+      if let url = URL(string: item.image), item.image.hasSuffix("http") {
+        imageView?.setImage(url: url) { [weak self] _ in
+          self?.layoutSubviews()
+        }
+      } else {
+        imageView?.image = UIImage(named: item.image)
+        layoutSubviews()
+      }
     }
 
     styles = item.styles
@@ -47,17 +72,17 @@ open class ImageListView: UITableViewCell, SpotConfigurable {
   open override func layoutSubviews() {
     super.layoutSubviews()
 
-    guard let textLabel = textLabel, let detailTextLabel = detailTextLabel else { return }
-
     imageView?.frame = contentView.frame
     gradientLayer.frame = contentView.frame
+
+    guard let textLabel = textLabel, let detailTextLabel = detailTextLabel else { return }
 
     [textLabel, detailTextLabel].forEach {
       $0.frame.size.width = frame.size.width - leftMargin
       $0.frame.origin.x = leftMargin
     }
 
-    textLabel.frame.origin.y = frame.size.height - textLabel.frame.size.height - detailTextLabel.frame.size.height
+    textLabel.frame.origin.y = frame.size.height - textLabel.frame.size.height - detailTextLabel.frame.size.height - bottomMargin
     detailTextLabel.frame.origin.y = textLabel.frame.maxY
     separatorInset.left = textLabel.frame.origin.x
   }
