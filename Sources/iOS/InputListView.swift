@@ -179,7 +179,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     item.size.height = textField.frame.maxY + meta.insets.top + meta.insets.bottom
   }
 
-  override public func layoutSubviews() {
+  override open func layoutSubviews() {
     super.layoutSubviews()
     
     textField.layer.cornerRadius = textField.frame.size.height / 2
