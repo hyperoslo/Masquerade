@@ -3,7 +3,7 @@ import Spots
 import Tailor
 import UIKit
 
-enum InputFieldAlignment: String {
+public enum InputFieldAlignment: String {
   case center = "center", left = "left"
 }
 
