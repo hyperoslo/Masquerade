@@ -42,9 +42,9 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
 
   public var preferredViewSize = CGSize(width: 0, height: 180)
 
-  lazy var textFieldLabel: UILabel = UILabel()
-  lazy var textField: UITextField = UITextField()
-  lazy var loadingView = UIView()
+  open lazy var textFieldLabel: UILabel = UILabel()
+  open lazy var textField: UITextField = UITextField()
+  open lazy var loadingView = UIView()
 
   lazy var gradient: CAGradientLayer = {
     let gradient = CAGradientLayer()
