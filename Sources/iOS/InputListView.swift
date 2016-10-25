@@ -60,7 +60,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     return gradient
   }()
 
-  lazy var animation: CABasicAnimation = { [unowned self] in
+  open lazy var animation: CABasicAnimation = { [unowned self] in
     let animation = CABasicAnimation(keyPath: "position")
     animation.duration = 3.0
     animation.isRemovedOnCompletion = false
@@ -70,7 +70,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     return animation
     }()
 
-  var loading: Bool? {
+  open var loading: Bool? {
     didSet {
       guard let loading = loading else { return }
       if loading {
