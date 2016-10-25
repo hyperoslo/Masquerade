@@ -11,6 +11,7 @@
 		BD218F8E1DB6006500DFAECA /* Hue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F8D1DB6006500DFAECA /* Hue.framework */; };
 		BD218F901DB600C600DFAECA /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F8F1DB600C600DFAECA /* Cartography.framework */; };
 		BD218F921DB6010200DFAECA /* Fashion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F911DB6010200DFAECA /* Fashion.framework */; };
+		BD4EB6981DBF914F0081E9F6 /* ButtonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4EB6971DBF914F0081E9F6 /* ButtonListView.swift */; };
 		BD59250B1DBE8CBF007FDC4E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59250A1DBE8CBF007FDC4E /* ListView.swift */; };
 		BD5925191DBF5E87007FDC4E /* InputListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5925181DBF5E87007FDC4E /* InputListView.swift */; };
 		BD6F86A71DB822BD00222E22 /* Item+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */; };
@@ -53,6 +54,7 @@
 		BD218F8D1DB6006500DFAECA /* Hue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hue.framework; path = Carthage/Build/iOS/Hue.framework; sourceTree = "<group>"; };
 		BD218F8F1DB600C600DFAECA /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
 		BD218F911DB6010200DFAECA /* Fashion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fashion.framework; path = Carthage/Build/iOS/Fashion.framework; sourceTree = "<group>"; };
+		BD4EB6971DBF914F0081E9F6 /* ButtonListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonListView.swift; sourceTree = "<group>"; };
 		BD59250A1DBE8CBF007FDC4E /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		BD5925181DBF5E87007FDC4E /* InputListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputListView.swift; sourceTree = "<group>"; };
 		BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+Extensions.swift"; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 		D5C6296A1C3A809D007F7B7C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BD4EB6971DBF914F0081E9F6 /* ButtonListView.swift */,
 				BDE85F061DB4C43C00761669 /* CoreListView.swift */,
 				BDE85EEE1DB3F2E300761669 /* ToggleListView.swift */,
 				BDD9ABD01DB55930005D8C04 /* InfoListView.swift */,
@@ -452,6 +455,7 @@
 				BDE85EEF1DB3F2E300761669 /* ToggleListView.swift in Sources */,
 				BD59250B1DBE8CBF007FDC4E /* ListView.swift in Sources */,
 				D5C629871C3A89A8007F7B7C /* Shared.swift in Sources */,
+				BD4EB6981DBF914F0081E9F6 /* ButtonListView.swift in Sources */,
 				BD5925191DBF5E87007FDC4E /* InputListView.swift in Sources */,
 				BD86BCB51DB914F00072B429 /* ImageListView.swift in Sources */,
 				BDD9ABD11DB55930005D8C04 /* InfoListView.swift in Sources */,
