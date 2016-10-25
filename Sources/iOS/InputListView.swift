@@ -42,7 +42,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
 
   public var preferredViewSize = CGSize(width: 0, height: 180)
 
-  open lazy var textFieldLabel: UILabel = UILabel()
+  open lazy var infoLabel: UILabel = UILabel()
   open lazy var textField: UITextField = UITextField()
   open lazy var loadingView = UIView()
 
@@ -120,7 +120,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     selectedBackgroundView = UIView()
     selectedBackgroundView?.backgroundColor = UIColor.clear
     selectionStyle = .none
-    [textFieldLabel, textField].forEach { contentView.addSubview($0) }
+    [infoLabel, textField].forEach { contentView.addSubview($0) }
   }
 
   required public init?(coder aDecoder: NSCoder) {
@@ -132,25 +132,26 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     styles = meta.styles
     backgroundColor = UIColor.clear
 
-    textFieldLabel.text = item.title
-    textFieldLabel.sizeToFit()
+    infoLabel.text = item.title
+    infoLabel.sizeToFit()
 
     if meta.alignment == InputFieldAlignment.center.rawValue {
-      textFieldLabel.centerInSuperview()
+      infoLabel.centerInSuperview()
     }
-    textFieldLabel.frame.origin.y = meta.insets.top
+    infoLabel.frame.origin.y = meta.insets.top
 
     textField.sizeToFit()
     textField.frame.size.width = contentView.frame.size.width
 
     let placeholderText = NSAttributedString(string: item.subtitle.uppercased(),
                                              attributes: [
-                                              NSForegroundColorAttributeName : textFieldLabel.textColor.alpha(0.5)
+                                              NSForegroundColorAttributeName : infoLabel.textColor.alpha(0.5)
       ])
     textField.attributedPlaceholder = placeholderText
 
     if meta.alignment == InputFieldAlignment.center.rawValue {
-      textFieldLabel.centerInSuperview()
+      infoLabel.centerInSuperview()
+      infoLabel.frame.origin.y = infoLabel.frame.origin.y - 7.5
     }
 
     if !item.image.isEmpty {
@@ -160,7 +161,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
       textField.leftViewMode = .always
     }
 
-    textField.frame.origin.y = textFieldLabel.frame.maxY
+    textField.frame.origin.y = infoLabel.frame.maxY + 7.5
     textField.frame.origin.x = meta.insets.left
     textField.frame.size.width -= meta.insets.left + meta.insets.right
     textField.frame.size.height = (textField.font?.pointSize ?? 18) * 2.5
