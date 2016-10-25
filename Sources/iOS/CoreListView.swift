@@ -16,16 +16,20 @@ open class CoreListView: ListSpotCell {
     var separator: Bool = false
     var selected: Bool = false
     var tintColor: String = ""
+    var disableSelected: Bool = false
 
     init(_ map: [String : Any]) {
       styles    <- map.property("styles")
       separator <- map.property("separator")
       selected  <- map.property("selected")
       tintColor <- map.property("tintColor")
+      disableSelected <- map.property("disableSelected")
     }
   }
 
   open lazy var separatorView = UIView()
+
+  var disableSelected: Bool = false
 
   public lazy var titleLabel: UILabel = {
     let label = UILabel()
@@ -59,11 +63,28 @@ open class CoreListView: ListSpotCell {
     fatalError("init(coder:) has not been implemented")
   }
 
+  open override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+    if disableSelected {
+      super.setHighlighted(!disableSelected, animated: !disableSelected)
+    } else {
+      super.setHighlighted(highlighted, animated: animated)
+    }
+  }
+
+  open override func setSelected(_ selected: Bool, animated: Bool) {
+    if disableSelected {
+      super.setSelected(!disableSelected, animated: !disableSelected)
+    } else {
+      super.setSelected(selected, animated: animated)
+    }
+  }
+
   /// A configure method that is used on reference types that can be configured using a view model
   ///
   /// - parameter item: A inout Item so that the ItemConfigurable object can configure the view model width and height based on its UI components
   override open func configure(_ item: inout Item) {
     let meta: Meta = item.metaInstance()
+    disableSelected = meta.disableSelected
 
     self.item = item
 
@@ -98,6 +119,7 @@ open class CoreListView: ListSpotCell {
   func layoutViews(item: inout Item) {
     guard let imageView = imageView else { return }
 
+    let leftMargin: CGFloat = !item.image.isEmpty ? self.leftMargin : self.leftMargin * 2
     let rightMargin: CGFloat = accessoryType == .none ? 15 : 45
 
     [titleLabel, subtitleLabel, extraTextLabel].forEach {
@@ -106,6 +128,7 @@ open class CoreListView: ListSpotCell {
         $0.frame.size.height = 0.0
         $0.frame.size.width = contentView.frame.width - $0.frame.origin.x - rightMargin
         $0.sizeToFit()
+        $0.frame.size.width = contentView.frame.width - $0.frame.origin.x - rightMargin
       }
     }
 
@@ -149,6 +172,7 @@ open class CoreListView: ListSpotCell {
   }
 
   open override func prepareForReuse() {
+    disableSelected = false
     item = nil
     accessoryType = .none
 
