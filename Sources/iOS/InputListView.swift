@@ -40,7 +40,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     }
   }
 
-  var preferredViewSize = CGSize(width: 0, height: 180)
+  public var preferredViewSize = CGSize(width: 0, height: 180)
 
   lazy var textFieldLabel: UILabel = UILabel()
   lazy var textField: UITextField = UITextField()
@@ -123,11 +123,11 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     [textFieldLabel, textField].forEach { contentView.addSubview($0) }
   }
 
-  required init?(coder aDecoder: NSCoder) {
+  required public init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 
-  func configure(_ item: inout Item) {
+  public func configure(_ item: inout Item) {
     let meta: Meta = item.metaInstance()
     styles = meta.styles
     backgroundColor = UIColor.clear
@@ -179,7 +179,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     item.size.height = textField.frame.maxY + meta.insets.top + meta.insets.bottom
   }
 
-  override func layoutSubviews() {
+  override public func layoutSubviews() {
     super.layoutSubviews()
     
     textField.layer.cornerRadius = textField.frame.size.height / 2
