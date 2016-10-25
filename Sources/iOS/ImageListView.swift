@@ -56,7 +56,7 @@ open class ImageListView: UITableViewCell, SpotConfigurable {
     }
 
     if !item.image.isEmpty {
-      if let url = URL(string: item.image), item.image.hasSuffix("http") {
+      if let url = URL(string: item.image), item.image.hasPrefix("http") {
         imageView?.setImage(url: url) { [weak self] _ in
           self?.layoutSubviews()
         }
