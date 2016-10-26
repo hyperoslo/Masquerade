@@ -18,7 +18,8 @@ struct MasqueradeConfigurator {
     ]
   }
 
-  var lookup: [String : UIView.Type]
+  var listItems: [String : UIView.Type]
+  var gridItems: [String : UIView.Type]
 
   init() {
     Controller.configure = { $0.backgroundColor = .white }
@@ -26,15 +27,23 @@ struct MasqueradeConfigurator {
     GridSpot.configure = { view, _ in view.backgroundColor = .white }
     CarouselSpot.configure = { view, _ in view.backgroundColor = .white }
 
-    lookup = [
+    listItems = [
       "core" : CoreListView.self,
       "toggle" : ToggleListView.self,
       "info" : InfoListView.self,
       "image" : ImageListView.self
     ]
 
-    for (key, value) in lookup {
+    gridItems = [
+      "core" : CoreGridView.self
+    ]
+
+    for (key, value) in listItems {
       ListSpot.register(view: value, identifier: key)
+    }
+
+    for (key, value) in gridItems {
+      GridSpot.register(view: value, identifier: key)
     }
   }
 }

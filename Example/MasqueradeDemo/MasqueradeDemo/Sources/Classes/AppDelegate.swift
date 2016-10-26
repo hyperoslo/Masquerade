@@ -38,7 +38,7 @@ extension AppDelegate {
   func didSelect(item: Item, in spot: Spotable) {
     guard let appDelegate = UIApplication.shared.delegate as? AppDelegate,
       let kind: String = item.meta.resolve(keyPath: "kind"),
-      let itemKind = appDelegate.masquerade.lookup[kind],
+      let itemKind = appDelegate.masquerade.listItems[kind],
       let view = itemKind.init() as? Masqueradable
       else { return }
 
