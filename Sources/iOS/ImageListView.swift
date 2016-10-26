@@ -41,6 +41,14 @@ open class ImageListView: UITableViewCell, SpotConfigurable {
     fatalError("init(coder:) has not been implemented")
   }
 
+  open override func setSelected(_ selected: Bool, animated: Bool) {
+    super.setSelected(false, animated: false)
+  }
+
+  open override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+    super.setHighlighted(false, animated: false)
+  }
+
   /// A configure method that is used on reference types that can be configured using a view model
   ///
   /// - parameter item: A inout Item so that the ItemConfigurable object can configure the view model width and height based on its UI components
