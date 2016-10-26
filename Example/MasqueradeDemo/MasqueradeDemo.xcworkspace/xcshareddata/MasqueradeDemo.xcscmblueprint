@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "824E57F031F7B307A4303DCFF05E8E45F43628A1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "38A0E0B8CC71517BD0065D1A89290295EBFA6A7C" : 9223372036854775807,
+    "BD3D56EFDA20AB290F3B9D75FA0690A5C7D58C98" : 9223372036854775807,
+    "824E57F031F7B307A4303DCFF05E8E45F43628A1" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7C60A92C-5EE6-4536-BFD9-A5719E41FC74",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "38A0E0B8CC71517BD0065D1A89290295EBFA6A7C" : "Spots\/",
+    "BD3D56EFDA20AB290F3B9D75FA0690A5C7D58C98" : "Brick\/",
+    "824E57F031F7B307A4303DCFF05E8E45F43628A1" : "Masquerade\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MasqueradeDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/MasqueradeDemo\/MasqueradeDemo.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hyperoslo\/Spots.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "38A0E0B8CC71517BD0065D1A89290295EBFA6A7C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hyperoslo\/Masquerade.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "824E57F031F7B307A4303DCFF05E8E45F43628A1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:hyperoslo\/Brick.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BD3D56EFDA20AB290F3B9D75FA0690A5C7D58C98"
+    }
+  ]
+}
