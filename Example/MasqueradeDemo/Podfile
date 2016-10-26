@@ -4,10 +4,10 @@ platform :ios, '9.2'
 
 target 'MasqueradeDemo' do
   pod 'Masquerade', path: '../../'
-  pod 'Brick', path: '~/Code/Brick'
+  pod 'Brick', '~> 2.0'
   pod 'Compass', '~> 4.0'
   pod 'Fashion', '~> 2.0'
-  pod 'Spots', path: '~/Code/Spots'
+  pod 'Spots', '~> 5.0'
   pod 'Hue', '~> 2.0'
   pod 'Fashion', '~> 2.0'
   pod 'Cartography'
