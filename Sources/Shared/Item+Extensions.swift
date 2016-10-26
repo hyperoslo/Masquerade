@@ -11,7 +11,7 @@ public extension Item {
   }
 
   var imageHeight: CGFloat {
-    set { meta["image-image"] = newValue }
+    set { meta["image-height"] = newValue }
     get { return meta.property("image-height") ?? 80.0 }
   }
 
