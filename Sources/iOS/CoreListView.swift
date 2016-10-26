@@ -123,9 +123,9 @@ open class CoreListView: ListSpotCell {
     let rightMargin: CGFloat = accessoryType == .none ? 15 : 45
 
     [titleLabel, subtitleLabel, extraTextLabel].forEach {
+      $0.frame.size.height = 0.0
       if let text = $0.text, !text.isEmpty {
         $0.frame.origin.x = imageView.frame.maxX + leftMargin
-        $0.frame.size.height = 0.0
         $0.frame.size.width = contentView.frame.width - $0.frame.origin.x - rightMargin
         $0.sizeToFit()
         $0.frame.size.width = contentView.frame.width - $0.frame.origin.x - rightMargin
@@ -181,6 +181,7 @@ open class CoreListView: ListSpotCell {
       $0.text = ""
     }
 
+    imageView?.image = nil
     imageView?.frame = CGRect.zero
   }
 }
