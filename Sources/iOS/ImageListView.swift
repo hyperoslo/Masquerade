@@ -30,6 +30,7 @@ open class ImageListView: UITableViewCell, SpotConfigurable {
 
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
     super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
+    imageView?.clipsToBounds = true
     imageView?.contentMode = .scaleAspectFill
     imageView?.layer.zPosition = 0
     textLabel?.layer.zPosition = 1
