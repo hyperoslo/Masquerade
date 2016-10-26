@@ -18,6 +18,7 @@
 		BD6F86A81DB822BD00222E22 /* Item+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */; };
 		BD86BCB51DB914F00072B429 /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD86BCB41DB914F00072B429 /* ImageListView.swift */; };
 		BD86BCB61DB914F00072B429 /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD86BCB41DB914F00072B429 /* ImageListView.swift */; };
+		BDC91EC71DC08A65002CD731 /* CoreGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC91EC61DC08A65002CD731 /* CoreGridView.swift */; };
 		BDD9ABD11DB55930005D8C04 /* InfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9ABD01DB55930005D8C04 /* InfoListView.swift */; };
 		BDE85EEF1DB3F2E300761669 /* ToggleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE85EEE1DB3F2E300761669 /* ToggleListView.swift */; };
 		BDE85F071DB4C43C00761669 /* CoreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE85F061DB4C43C00761669 /* CoreListView.swift */; };
@@ -59,6 +60,7 @@
 		BD5925181DBF5E87007FDC4E /* InputListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputListView.swift; sourceTree = "<group>"; };
 		BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+Extensions.swift"; sourceTree = "<group>"; };
 		BD86BCB41DB914F00072B429 /* ImageListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
+		BDC91EC61DC08A65002CD731 /* CoreGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGridView.swift; sourceTree = "<group>"; };
 		BDD9ABD01DB55930005D8C04 /* InfoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoListView.swift; sourceTree = "<group>"; };
 		BDE85EEE1DB3F2E300761669 /* ToggleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleListView.swift; sourceTree = "<group>"; };
 		BDE85F061DB4C43C00761669 /* CoreListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreListView.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				BD86BCB41DB914F00072B429 /* ImageListView.swift */,
 				BD59250A1DBE8CBF007FDC4E /* ListView.swift */,
 				BD5925181DBF5E87007FDC4E /* InputListView.swift */,
+				BDC91EC61DC08A65002CD731 /* CoreGridView.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 				D5C629871C3A89A8007F7B7C /* Shared.swift in Sources */,
 				BD4EB6981DBF914F0081E9F6 /* ButtonListView.swift in Sources */,
 				BD5925191DBF5E87007FDC4E /* InputListView.swift in Sources */,
+				BDC91EC71DC08A65002CD731 /* CoreGridView.swift in Sources */,
 				BD86BCB51DB914F00072B429 /* ImageListView.swift in Sources */,
 				BDD9ABD11DB55930005D8C04 /* InfoListView.swift in Sources */,
 			);
