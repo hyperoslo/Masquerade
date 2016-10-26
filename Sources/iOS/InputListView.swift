@@ -4,16 +4,16 @@ import Tailor
 import UIKit
 
 public enum InputFieldAlignment: String {
-  case center = "center", left = "left"
+  case center, left
 }
 
 open class InputFieldListView: UITableViewCell, SpotConfigurable {
 
   public enum KeyboardType: String {
-    case Number = "number"
+    case Number
     case PhoneNumber = "phone_number"
-    case Email = "email"
-    case Text = "text"
+    case Email
+    case Text
 
     public static func defaultValue() -> KeyboardType {
       return .Text
