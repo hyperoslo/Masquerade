@@ -22,9 +22,9 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
   public weak var delegate: ButtonListViewDelegate? {
     didSet {
       selectionStyle = delegate == nil ? .default : .none
+      button.isUserInteractionEnabled = delegate != nil
     }
   }
-
 
   public var item: Item?
   public var preferredViewSize = CGSize(width: 0, height: 44)
@@ -40,7 +40,13 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
     }
   }
 
-  public lazy var button = UIButton()
+  public lazy var button: UIButton = {
+    let button = UIButton()
+    button.addTarget(self, action: #selector(buttonDidPress), for: .touchUpInside)
+
+    return button
+  }()
+
   public lazy var loadingIndicator = UIActivityIndicatorView()
 
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
@@ -70,12 +76,11 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
     styles = meta.styles
     button.setTitle(item.title, for: .normal)
     button.sizeToFit()
-    button.isUserInteractionEnabled = false
 
     if button.frame.size.width < 180 {
       button.frame.size.width = 180
     }
-    
+
     button.frame.size.height = preferredViewSize.height
     button.centerInSuperview()
 
@@ -94,5 +99,11 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
     super.layoutSubviews()
 
     button.layer.cornerRadius = button.frame.size.height / 2
+  }
+
+  // MARK: - Actions
+
+  func buttonDidPress() {
+    delegate?.buttonListViewDidPress(self)
   }
 }
