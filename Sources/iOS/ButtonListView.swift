@@ -45,10 +45,12 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
 
   override open func setHighlighted(_ highlighted: Bool, animated: Bool) {
     super.setHighlighted(false, animated: false)
+    button.isHighlighted = highlighted
   }
 
   override open func setSelected(_ selected: Bool, animated: Bool) {
     super.setSelected(false, animated: false)
+    button.isSelected = selected
   }
 
   public func configure(_ item: inout Item) {
