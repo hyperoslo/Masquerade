@@ -3,6 +3,10 @@ import Spots
 import Tailor
 import UIKit
 
+public protocol ButtonListViewDelegate: class {
+  func buttonListViewDidPress(_ view: ButtonListView)
+}
+
 open class ButtonListView: UITableViewCell, SpotConfigurable {
 
   struct Meta: Mappable {
@@ -14,6 +18,13 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
       self.enabled <- map.property("enabled")
     }
   }
+
+  public weak var delegate: ButtonListViewDelegate? {
+    didSet {
+      selectionStyle = delegate == nil ? .default : .none
+    }
+  }
+
 
   public var item: Item?
   public var preferredViewSize = CGSize(width: 0, height: 44)
@@ -64,6 +75,7 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
     if button.frame.size.width < 180 {
       button.frame.size.width = 180
     }
+    
     button.frame.size.height = preferredViewSize.height
     button.centerInSuperview()
 
