@@ -142,6 +142,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
 
     textField.sizeToFit()
     textField.frame.size.width = contentView.frame.size.width
+    textField.text = item.text
 
     let placeholderText = NSAttributedString(string: item.subtitle.uppercased(),
                                              attributes: [
