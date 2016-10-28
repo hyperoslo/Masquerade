@@ -12,7 +12,8 @@ extension ImageListView: Masqueradable {
              subtitle: "Subtitle",
              image: "http://www.youtwitface.com/wp-content/uploads/2012/05/kitten-650x488.jpeg",
              kind: "image",
-             size: CGSize(width: 0, height: 180))
+             size: CGSize(width: 0, height: 180),
+             meta: ["gradient" : true])
       ]
     )
   }
