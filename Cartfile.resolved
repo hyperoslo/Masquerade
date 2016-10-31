@@ -1,5 +1,5 @@
 github "robb/Cartography" "1.0.1"
-github "krzyzanowskim/CryptoSwift" "0.6.3"
+github "krzyzanowskim/CryptoSwift" "0.6.4"
 github "vadymmarkov/Fashion" "2.0.0"
 github "hyperoslo/Hue" "2.0.0"
 github "zenangst/Tailor" "2.0.1"

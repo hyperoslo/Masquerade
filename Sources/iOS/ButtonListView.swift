@@ -3,6 +3,10 @@ import Spots
 import Tailor
 import UIKit
 
+public protocol ButtonListViewDelegate: class {
+  func buttonListViewDidPress(_ view: ButtonListView)
+}
+
 open class ButtonListView: UITableViewCell, SpotConfigurable {
 
   struct Meta: Mappable {
@@ -12,6 +16,13 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
     init(_ map: [String : Any]) {
       self.styles <- map.property("styles")
       self.enabled <- map.property("enabled")
+    }
+  }
+
+  public weak var delegate: ButtonListViewDelegate? {
+    didSet {
+      selectionStyle = delegate == nil ? .default : .none
+      button.isUserInteractionEnabled = delegate != nil
     }
   }
 
@@ -29,11 +40,19 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
     }
   }
 
-  public lazy var button = UIButton()
+  public lazy var button: UIButton = {
+    let button = UIButton()
+    button.addTarget(self, action: #selector(buttonDidPress), for: .touchUpInside)
+
+    return button
+  }()
+
   public lazy var loadingIndicator = UIActivityIndicatorView()
 
   override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
+    selectionStyle = .default
+    button.isUserInteractionEnabled = false
     contentView.addSubview(button)
     button.addSubview(loadingIndicator)
     backgroundColor = UIColor.clear
@@ -45,10 +64,22 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
 
   override open func setHighlighted(_ highlighted: Bool, animated: Bool) {
     super.setHighlighted(false, animated: false)
+
+    guard delegate == nil else {
+      return
+    }
+
+    button.isHighlighted = highlighted
   }
 
   override open func setSelected(_ selected: Bool, animated: Bool) {
     super.setSelected(false, animated: false)
+
+    guard delegate == nil else {
+      return
+    }
+
+    button.isSelected = selected
   }
 
   public func configure(_ item: inout Item) {
@@ -57,11 +88,11 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
     styles = meta.styles
     button.setTitle(item.title, for: .normal)
     button.sizeToFit()
-    button.isUserInteractionEnabled = false
 
     if button.frame.size.width < 180 {
       button.frame.size.width = 180
     }
+
     button.frame.size.height = preferredViewSize.height
     button.centerInSuperview()
 
@@ -80,5 +111,11 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
     super.layoutSubviews()
 
     button.layer.cornerRadius = button.frame.size.height / 2
+  }
+
+  // MARK: - Actions
+
+  func buttonDidPress() {
+    delegate?.buttonListViewDidPress(self)
   }
 }
