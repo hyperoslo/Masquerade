@@ -103,7 +103,13 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
     loadingIndicator.frame.origin.y = button.frame.height - loadingIndicator.frame.size.height
 
     button.isEnabled = meta.enabled
-    item.size.height = preferredViewSize.height
+
+    if item.size.height == 0.0 {
+      item.size.height = preferredViewSize.height
+    } else {
+      button.centerInSuperview()
+    }
+
     self.item = item
   }
 
