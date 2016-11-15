@@ -11,17 +11,17 @@
 		BD218F8E1DB6006500DFAECA /* Hue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F8D1DB6006500DFAECA /* Hue.framework */; };
 		BD218F901DB600C600DFAECA /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F8F1DB600C600DFAECA /* Cartography.framework */; };
 		BD218F921DB6010200DFAECA /* Fashion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F911DB6010200DFAECA /* Fashion.framework */; };
-		BD4EB6981DBF914F0081E9F6 /* ButtonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4EB6971DBF914F0081E9F6 /* ButtonListView.swift */; };
-		BD59250B1DBE8CBF007FDC4E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59250A1DBE8CBF007FDC4E /* ListView.swift */; };
-		BD5925191DBF5E87007FDC4E /* InputListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD5925181DBF5E87007FDC4E /* InputListView.swift */; };
 		BD6F86A71DB822BD00222E22 /* Item+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */; };
 		BD6F86A81DB822BD00222E22 /* Item+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */; };
-		BD86BCB51DB914F00072B429 /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD86BCB41DB914F00072B429 /* ImageListView.swift */; };
-		BD86BCB61DB914F00072B429 /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD86BCB41DB914F00072B429 /* ImageListView.swift */; };
-		BDC91EC71DC08A65002CD731 /* CoreGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDC91EC61DC08A65002CD731 /* CoreGridView.swift */; };
-		BDD9ABD11DB55930005D8C04 /* InfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9ABD01DB55930005D8C04 /* InfoListView.swift */; };
-		BDE85EEF1DB3F2E300761669 /* ToggleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE85EEE1DB3F2E300761669 /* ToggleListView.swift */; };
-		BDE85F071DB4C43C00761669 /* CoreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE85F061DB4C43C00761669 /* CoreListView.swift */; };
+		BD9B54A61DDAFC1200FCAE46 /* ButtonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B549C1DDAFC1200FCAE46 /* ButtonListView.swift */; };
+		BD9B54A71DDAFC1200FCAE46 /* CoreGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B549D1DDAFC1200FCAE46 /* CoreGridView.swift */; };
+		BD9B54A81DDAFC1200FCAE46 /* CoreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B549E1DDAFC1200FCAE46 /* CoreListView.swift */; };
+		BD9B54A91DDAFC1200FCAE46 /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B549F1DDAFC1200FCAE46 /* ImageListView.swift */; };
+		BD9B54AA1DDAFC1200FCAE46 /* InfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B54A01DDAFC1200FCAE46 /* InfoListView.swift */; };
+		BD9B54AB1DDAFC1200FCAE46 /* InputListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B54A11DDAFC1200FCAE46 /* InputListView.swift */; };
+		BD9B54AC1DDAFC1200FCAE46 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B54A21DDAFC1200FCAE46 /* ListView.swift */; };
+		BD9B54AD1DDAFC1200FCAE46 /* ToggleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B54A31DDAFC1200FCAE46 /* ToggleListView.swift */; };
+		BD9B54AE1DDAFC1200FCAE46 /* UIView+CenterInSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B54A51DDAFC1200FCAE46 /* UIView+CenterInSuperview.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Masquerade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Masquerade.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* Masquerade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Masquerade.framework */; };
 		D5C629851C3A893F007F7B7C /* Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629841C3A893F007F7B7C /* Mac.swift */; };
@@ -55,15 +55,16 @@
 		BD218F8D1DB6006500DFAECA /* Hue.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hue.framework; path = Carthage/Build/iOS/Hue.framework; sourceTree = "<group>"; };
 		BD218F8F1DB600C600DFAECA /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
 		BD218F911DB6010200DFAECA /* Fashion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fashion.framework; path = Carthage/Build/iOS/Fashion.framework; sourceTree = "<group>"; };
-		BD4EB6971DBF914F0081E9F6 /* ButtonListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonListView.swift; sourceTree = "<group>"; };
-		BD59250A1DBE8CBF007FDC4E /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		BD5925181DBF5E87007FDC4E /* InputListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputListView.swift; sourceTree = "<group>"; };
 		BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+Extensions.swift"; sourceTree = "<group>"; };
-		BD86BCB41DB914F00072B429 /* ImageListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
-		BDC91EC61DC08A65002CD731 /* CoreGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGridView.swift; sourceTree = "<group>"; };
-		BDD9ABD01DB55930005D8C04 /* InfoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoListView.swift; sourceTree = "<group>"; };
-		BDE85EEE1DB3F2E300761669 /* ToggleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleListView.swift; sourceTree = "<group>"; };
-		BDE85F061DB4C43C00761669 /* CoreListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreListView.swift; sourceTree = "<group>"; };
+		BD9B549C1DDAFC1200FCAE46 /* ButtonListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonListView.swift; sourceTree = "<group>"; };
+		BD9B549D1DDAFC1200FCAE46 /* CoreGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGridView.swift; sourceTree = "<group>"; };
+		BD9B549E1DDAFC1200FCAE46 /* CoreListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreListView.swift; sourceTree = "<group>"; };
+		BD9B549F1DDAFC1200FCAE46 /* ImageListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
+		BD9B54A01DDAFC1200FCAE46 /* InfoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoListView.swift; sourceTree = "<group>"; };
+		BD9B54A11DDAFC1200FCAE46 /* InputListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputListView.swift; sourceTree = "<group>"; };
+		BD9B54A21DDAFC1200FCAE46 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		BD9B54A31DDAFC1200FCAE46 /* ToggleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleListView.swift; sourceTree = "<group>"; };
+		BD9B54A51DDAFC1200FCAE46 /* UIView+CenterInSuperview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+CenterInSuperview.swift"; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Masquerade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masquerade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +131,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD9B549A1DDAFC1200FCAE46 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BD9B549B1DDAFC1200FCAE46 /* Classes */,
+				BD9B54A41DDAFC1200FCAE46 /* Extensions */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		BD9B549B1DDAFC1200FCAE46 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BD9B549C1DDAFC1200FCAE46 /* ButtonListView.swift */,
+				BD9B549D1DDAFC1200FCAE46 /* CoreGridView.swift */,
+				BD9B549E1DDAFC1200FCAE46 /* CoreListView.swift */,
+				BD9B549F1DDAFC1200FCAE46 /* ImageListView.swift */,
+				BD9B54A01DDAFC1200FCAE46 /* InfoListView.swift */,
+				BD9B54A11DDAFC1200FCAE46 /* InputListView.swift */,
+				BD9B54A21DDAFC1200FCAE46 /* ListView.swift */,
+				BD9B54A31DDAFC1200FCAE46 /* ToggleListView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BD9B54A41DDAFC1200FCAE46 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD9B54A51DDAFC1200FCAE46 /* UIView+CenterInSuperview.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D5B2E8951C3A780C00C0327D = {
 			isa = PBXGroup;
 			children = (
@@ -166,26 +199,11 @@
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D5C6296A1C3A809D007F7B7C /* iOS */,
+				BD9B549A1DDAFC1200FCAE46 /* iOS */,
 				D5C6296C1C3A809D007F7B7C /* Mac */,
 				D5C6296E1C3A809D007F7B7C /* Shared */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		D5C6296A1C3A809D007F7B7C /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				BD4EB6971DBF914F0081E9F6 /* ButtonListView.swift */,
-				BDE85F061DB4C43C00761669 /* CoreListView.swift */,
-				BDE85EEE1DB3F2E300761669 /* ToggleListView.swift */,
-				BDD9ABD01DB55930005D8C04 /* InfoListView.swift */,
-				BD86BCB41DB914F00072B429 /* ImageListView.swift */,
-				BD59250A1DBE8CBF007FDC4E /* ListView.swift */,
-				BD5925181DBF5E87007FDC4E /* InputListView.swift */,
-				BDC91EC61DC08A65002CD731 /* CoreGridView.swift */,
-			);
-			path = iOS;
 			sourceTree = "<group>";
 		};
 		D5C6296C1C3A809D007F7B7C /* Mac */ = {
@@ -453,16 +471,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE85F071DB4C43C00761669 /* CoreListView.swift in Sources */,
 				BD6F86A71DB822BD00222E22 /* Item+Extensions.swift in Sources */,
-				BDE85EEF1DB3F2E300761669 /* ToggleListView.swift in Sources */,
-				BD59250B1DBE8CBF007FDC4E /* ListView.swift in Sources */,
 				D5C629871C3A89A8007F7B7C /* Shared.swift in Sources */,
-				BD4EB6981DBF914F0081E9F6 /* ButtonListView.swift in Sources */,
-				BD5925191DBF5E87007FDC4E /* InputListView.swift in Sources */,
-				BDC91EC71DC08A65002CD731 /* CoreGridView.swift in Sources */,
-				BD86BCB51DB914F00072B429 /* ImageListView.swift in Sources */,
-				BDD9ABD11DB55930005D8C04 /* InfoListView.swift in Sources */,
+				BD9B54AA1DDAFC1200FCAE46 /* InfoListView.swift in Sources */,
+				BD9B54A61DDAFC1200FCAE46 /* ButtonListView.swift in Sources */,
+				BD9B54A81DDAFC1200FCAE46 /* CoreListView.swift in Sources */,
+				BD9B54AB1DDAFC1200FCAE46 /* InputListView.swift in Sources */,
+				BD9B54AD1DDAFC1200FCAE46 /* ToggleListView.swift in Sources */,
+				BD9B54A91DDAFC1200FCAE46 /* ImageListView.swift in Sources */,
+				BD9B54A71DDAFC1200FCAE46 /* CoreGridView.swift in Sources */,
+				BD9B54AC1DDAFC1200FCAE46 /* ListView.swift in Sources */,
+				BD9B54AE1DDAFC1200FCAE46 /* UIView+CenterInSuperview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +498,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD86BCB61DB914F00072B429 /* ImageListView.swift in Sources */,
 				D5C629851C3A893F007F7B7C /* Mac.swift in Sources */,
 				D5C629881C3A89A8007F7B7C /* Shared.swift in Sources */,
 				BD6F86A81DB822BD00222E22 /* Item+Extensions.swift in Sources */,

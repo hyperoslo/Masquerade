@@ -187,14 +187,3 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     textField.layer.cornerRadius = textField.frame.size.height / 2
   }
 }
-
-extension UIView {
-
-  func centerInSuperview() {
-    guard let superview = superview else { return }
-
-    frame.origin = CGPoint(
-      x: superview.frame.width / 2 - frame.width / 2,
-      y: superview.frame.height / 2 - frame.height / 2)
-  }
-}
