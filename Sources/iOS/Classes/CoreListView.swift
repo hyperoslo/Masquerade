@@ -85,6 +85,7 @@ open class CoreListView: ListSpotCell {
   override open func configure(_ item: inout Item) {
     let meta: Meta = item.metaInstance()
     disableSelected = meta.disableSelected
+    styles = item.styles
 
     self.item = item
 
@@ -113,7 +114,6 @@ open class CoreListView: ListSpotCell {
     }
 
     separatorView.frame.origin.y = item.size.height - 1
-    styles = item.styles
   }
 
   func layoutViews(item: inout Item) {
