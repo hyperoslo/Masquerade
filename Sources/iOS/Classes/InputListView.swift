@@ -25,6 +25,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     var insets = UIEdgeInsets.zero
     var styles: String = ""
     var alignment: String = InputFieldAlignment.center.rawValue
+    var staticHeight: Bool = false
 
     required init(_ map: [String : Any]) {
       self.insets.top <- map.property("inset-top")
@@ -33,6 +34,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
       self.insets.right <- map.property("inset-right")
       self.styles <- map.property("styles")
       self.alignment <- map.property("alignment")
+      self.staticHeight <- map.property("static-height")
 
       if let keyboardType = KeyboardType(rawValue: map.property("keyboard-type") ?? "") {
         self.keyboardType <- keyboardType
@@ -108,8 +110,8 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
         UIView.animate(withDuration: 0.1, animations: {
           self.textField.alpha = 1.0
           self.loadingView.alpha = 0.0
-          }, completion: { _ in
-            self.loadingView.removeFromSuperview()
+        }, completion: { _ in
+          self.loadingView.removeFromSuperview()
         })
       }
     }
@@ -164,9 +166,21 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
 
     textField.frame.origin.y = infoLabel.frame.maxY + 7.5
     textField.frame.origin.x = meta.insets.left
-    textField.frame.size.width -= meta.insets.left + meta.insets.right
-    textField.frame.size.height = (textField.font?.pointSize ?? 18) * 2.5
 
+    configureType(meta: meta)
+
+    textField.frame.size.width -= meta.insets.left + meta.insets.right
+
+    if meta.staticHeight {
+      textField.frame.size.height = item.size.height - meta.insets.top - meta.insets.bottom
+      textField.centerVertically()
+    } else {
+      textField.frame.size.height = (textField.font?.pointSize ?? 18) * 2.5
+      item.size.height = textField.frame.maxY + meta.insets.top + meta.insets.bottom
+    }
+  }
+
+  func configureType(meta: Meta) {
     switch meta.keyboardType {
     case .Email:
       textField.keyboardType = .emailAddress
@@ -177,8 +191,6 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     default:
       textField.keyboardType = .default
     }
-
-    item.size.height = textField.frame.maxY + meta.insets.top + meta.insets.bottom
   }
 
   override open func layoutSubviews() {
