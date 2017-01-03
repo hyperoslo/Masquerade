@@ -146,7 +146,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     textField.frame.size.width = contentView.frame.size.width
     textField.text = item.text
 
-    let placeholderText = NSAttributedString(string: item.subtitle.uppercased(),
+    let placeholderText = NSAttributedString(string: item.subtitle,
                                              attributes: [
                                               NSForegroundColorAttributeName : infoLabel.textColor.alpha(0.5)
       ])
