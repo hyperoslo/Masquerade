@@ -172,8 +172,9 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     textField.frame.size.width -= meta.insets.left + meta.insets.right
 
     if meta.staticHeight {
-      textField.frame.size.height = item.size.height - meta.insets.top - meta.insets.bottom
+      textField.frame.size.height = (textField.font?.pointSize ?? 18) * 2.75
       textField.centerVertically()
+      infoLabel.frame.origin.y = textField.frame.origin.y - infoLabel.frame.size.height - 7.5
     } else {
       textField.frame.size.height = (textField.font?.pointSize ?? 18) * 2.5
       item.size.height = textField.frame.maxY + meta.insets.top + meta.insets.bottom
