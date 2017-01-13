@@ -6,10 +6,10 @@ import Tailor
 
 open class TextListView: UITableViewCell, SpotConfigurable {
 
-  var item: Item?
+  public var item: Item?
 
   public struct Meta: Mappable {
-    var styles: String = ""
+    public var styles: String = ""
 
     public init(_ map: [String : Any]) {
       self.styles <- map.property("styles")
