@@ -1,13 +1,13 @@
 PODS:
-  - Brick (2.0.2):
+  - Brick (2.0.5):
     - Tailor (~> 2.0)
-  - Cache (2.1.1):
+  - Cache (2.2.1):
     - CryptoSwift
   - Cartography (1.0.1)
   - Compass (4.0.0)
   - CryptoSwift (0.6.0)
   - Fashion (2.0.0)
-  - Hue (2.0.0)
+  - Hue (2.0.1)
   - Imaginary (1.0.1):
     - Cache (~> 2.0)
   - Masquerade (0.1.0):
@@ -17,12 +17,12 @@ PODS:
     - Hue (~> 2.0)
     - Imaginary (~> 1.0)
     - Spots (~> 5.0)
-  - Spots (5.1.1):
+  - Spots (5.7.2):
     - Brick (~> 2.0)
     - Cache (~> 2.0)
     - CryptoSwift (= 0.6.0)
     - Tailor (~> 2.0)
-  - Tailor (2.0.1)
+  - Tailor (2.0.2)
 
 DEPENDENCIES:
   - Brick (~> 2.0)
@@ -38,17 +38,17 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  Brick: a7cf051da76f833e46281477d91b04cee63593f7
-  Cache: 525a292370641881d7e350f0d451fd276790243a
+  Brick: 08788c20c9b9aded5b9e89b8a8942c1b4933e91a
+  Cache: 5b2d2d68477bd9c5b8e539d673cc217ed1284814
   Cartography: c1460e99395b824d9d75360b0382faeb0b33dcd7
   Compass: b7802d133b95ffde747515f0e84ed8b5153c3d53
   CryptoSwift: 4a599b7241b8d3b857d6e2c28867d0bd5d1aae24
   Fashion: f5cd202dcd048edd35217349527ac446d0853cd7
-  Hue: 2b317616a04cc5d7cccdb024c88e6d143e2b9cf1
+  Hue: 354caec055fdc9d38b5ef33ca2e7224721843baf
   Imaginary: f37fb0dd81a5881cf7a8232d7854e8c5a689b054
   Masquerade: a6e8aea8f5dcaf699177a118589e431b56c88890
-  Spots: f75f3d6c67121aa55c82697d8d9e081860d4302c
-  Tailor: faa9ec5be402056be8ec67c0e461f00251d19191
+  Spots: 07f5917bd9a7a3a2184b1ae367c2843aa69f7296
+  Tailor: 6f03d033af361a7cf1f25627a1877c5b91a9618c
 
 PODFILE CHECKSUM: 17c1629fbdd6f19fa15f85e42e4950baff3f5dd5
 
