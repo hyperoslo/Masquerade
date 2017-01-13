@@ -119,6 +119,12 @@ open class ButtonListView: UITableViewCell, SpotConfigurable {
     button.layer.cornerRadius = button.frame.size.height / 2
   }
 
+  open override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+    let result = super.point(inside: point, with: event)
+    let insidePoint = convert(point, to: button)
+    return result && button.point(inside: insidePoint, with: event)
+  }
+
   // MARK: - Actions
 
   func buttonDidPress() {
