@@ -199,4 +199,10 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
     
     textField.layer.cornerRadius = textField.frame.size.height / 2
   }
+
+  open override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+    let result = super.point(inside: point, with: event)
+    let insidePoint = convert(point, to: textField)
+    return result && textField.point(inside: insidePoint, with: event)
+  }
 }

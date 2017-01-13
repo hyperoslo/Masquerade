@@ -15,6 +15,7 @@ struct MasqueradeConfigurator {
       Item(title: "HTML",   subtitle: listDescription, meta: ["kind" : "html"]),
       Item(title: "Info",   subtitle: listDescription, meta: ["kind" : "info"]),
       Item(title: "Input",  subtitle: listDescription, meta: ["kind" : "input"]),
+      Item(title: "Text",  subtitle: listDescription, meta: ["kind" : "text"]),
     ]
   }
 
@@ -31,7 +32,8 @@ struct MasqueradeConfigurator {
       "core" : CoreListView.self,
       "toggle" : ToggleListView.self,
       "info" : InfoListView.self,
-      "image" : ImageListView.self
+      "image" : ImageListView.self,
+      "text": TextListView.self
     ]
 
     gridItems = [
