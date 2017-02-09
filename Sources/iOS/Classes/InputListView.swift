@@ -10,13 +10,13 @@ public enum InputFieldAlignment: String {
 open class InputFieldListView: UITableViewCell, SpotConfigurable {
 
   public enum KeyboardType: String {
-    case Number
-    case PhoneNumber = "phone_number"
-    case Email
-    case Text
+    case number
+    case phoneNumber = "phone_number"
+    case email
+    case text
 
     public static func defaultValue() -> KeyboardType {
-      return .Text
+      return .text
     }
   }
 
@@ -35,10 +35,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
       self.styles <- map.property("styles")
       self.alignment <- map.property("alignment")
       self.staticHeight <- map.property("static-height")
-
-      if let keyboardType = KeyboardType(rawValue: map.property("keyboard-type") ?? "") {
-        self.keyboardType <- keyboardType
-      }
+      self.keyboardType <- map.enum("keyboard-type")
     }
   }
 
@@ -183,11 +180,11 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
 
   func configureType(meta: Meta) {
     switch meta.keyboardType {
-    case .Email:
+    case .email:
       textField.keyboardType = .emailAddress
-    case .PhoneNumber:
+    case .phoneNumber:
       textField.keyboardType = .phonePad
-    case .Number:
+    case .number:
       textField.keyboardType = .numberPad
     default:
       textField.keyboardType = .default
@@ -196,7 +193,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
 
   override open func layoutSubviews() {
     super.layoutSubviews()
-    
+
     textField.layer.cornerRadius = textField.frame.size.height / 2
   }
 
