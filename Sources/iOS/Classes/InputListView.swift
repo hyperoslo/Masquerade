@@ -35,10 +35,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
       self.styles <- map.property("styles")
       self.alignment <- map.property("alignment")
       self.staticHeight <- map.property("static-height")
-
-      if let keyboardType = KeyboardType(rawValue: map.property("keyboard-type") ?? "") {
-        self.keyboardType <- keyboardType
-      }
+      self.keyboardType <- map.enum("keyboard-type")
     }
   }
 
