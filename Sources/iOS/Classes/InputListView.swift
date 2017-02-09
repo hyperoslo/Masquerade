@@ -180,11 +180,11 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
 
   func configureType(meta: Meta) {
     switch meta.keyboardType {
-    case .Email:
+    case .email:
       textField.keyboardType = .emailAddress
-    case .PhoneNumber:
+    case .phoneNumber:
       textField.keyboardType = .phonePad
-    case .Number:
+    case .number:
       textField.keyboardType = .numberPad
     default:
       textField.keyboardType = .default
@@ -193,7 +193,7 @@ open class InputFieldListView: UITableViewCell, SpotConfigurable {
 
   override open func layoutSubviews() {
     super.layoutSubviews()
-    
+
     textField.layer.cornerRadius = textField.frame.size.height / 2
   }
 
