@@ -10,13 +10,13 @@ public enum InputFieldAlignment: String {
 open class InputFieldListView: UITableViewCell, SpotConfigurable {
 
   public enum KeyboardType: String {
-    case Number
-    case PhoneNumber = "phone_number"
-    case Email
-    case Text
+    case number
+    case phoneNumber = "phone_number"
+    case email
+    case text
 
     public static func defaultValue() -> KeyboardType {
-      return .Text
+      return .text
     }
   }
 
