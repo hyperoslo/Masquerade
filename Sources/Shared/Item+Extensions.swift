@@ -1,6 +1,5 @@
-import Fashion
+import Spots
 import Tailor
-import UIKit
 
 public extension Item {
 

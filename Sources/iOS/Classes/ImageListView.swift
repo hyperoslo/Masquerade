@@ -1,6 +1,7 @@
 import UIKit
 import Spots
 import Tailor
+import Fashion
 
 open class ImageListView: UITableViewCell, ItemConfigurable {
 
