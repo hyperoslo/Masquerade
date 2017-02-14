@@ -23,8 +23,7 @@ Pod::Spec.new do |s|
   # s.ios.frameworks = 'UIKit', 'Foundation'
   # s.osx.frameworks = 'Cocoa', 'Foundation'
 
-  s.dependency 'Spots', '~> 5.0'
-  s.dependency 'Brick', '~> 2.0'
+  s.dependency 'Spots', '~> 6.0'
   s.dependency 'Cartography', '~> 1.0'
   s.dependency 'Fashion', '~> 2.0'
   s.dependency 'Hue', '~> 2.0'
