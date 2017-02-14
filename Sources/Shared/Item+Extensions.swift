@@ -1,5 +1,4 @@
 import Fashion
-import Brick
 import Tailor
 import UIKit
 

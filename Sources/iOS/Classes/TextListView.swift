@@ -1,10 +1,9 @@
 import UIKit
-import Brick
 import Fashion
 import Spots
 import Tailor
 
-open class TextListView: UITableViewCell, SpotConfigurable {
+open class TextListView: UITableViewCell, ItemConfigurable {
 
   public var item: Item?
 

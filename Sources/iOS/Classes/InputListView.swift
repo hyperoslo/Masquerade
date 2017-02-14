@@ -1,4 +1,3 @@
-import Brick
 import Spots
 import Tailor
 import UIKit
@@ -7,7 +6,7 @@ public enum InputFieldAlignment: String {
   case center, left
 }
 
-open class InputFieldListView: UITableViewCell, SpotConfigurable {
+open class InputFieldListView: UITableViewCell, ItemConfigurable {
 
   public enum KeyboardType: String {
     case number

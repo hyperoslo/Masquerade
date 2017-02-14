@@ -1,9 +1,8 @@
 import UIKit
 import Spots
-import Brick
 import Tailor
 
-open class InfoListView: UITableViewCell, SpotConfigurable {
+open class InfoListView: UITableViewCell, ItemConfigurable {
 
   struct Meta: Mappable {
     var enabled: Bool = false

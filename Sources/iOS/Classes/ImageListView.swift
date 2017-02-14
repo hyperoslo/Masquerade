@@ -1,9 +1,8 @@
 import UIKit
 import Spots
-import Brick
 import Tailor
 
-open class ImageListView: UITableViewCell, SpotConfigurable {
+open class ImageListView: UITableViewCell, ItemConfigurable {
 
   struct Meta: Mappable {
     var gradient: Bool = false

@@ -1,4 +1,3 @@
-import Brick
 import Hue
 import Imaginary
 import Spots

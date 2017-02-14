@@ -1,4 +1,3 @@
-import Brick
 import Cartography
 import Spots
 import Tailor
@@ -9,7 +8,7 @@ public protocol ToggleListViewDelegate: class {
   func toggleDidChangeValue(_ value: Bool)
 }
 
-open class ToggleListView: UITableViewCell, SpotConfigurable {
+open class ToggleListView: UITableViewCell, ItemConfigurable {
   /// The perferred view size of the view.
   open var preferredViewSize: CGSize = CGSize(width: 0, height: 78)
 

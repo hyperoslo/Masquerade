@@ -1,9 +1,8 @@
 import UIKit
-import Brick
 import Spots
 import Imaginary
 
-open class ListView: UITableViewCell, SpotConfigurable {
+open class ListView: UITableViewCell, ItemConfigurable {
 
   public var preferredViewSize: CGSize = CGSize(width: 0, height: 44)
 

@@ -1,9 +1,8 @@
 import Spots
-import Brick
 import Imaginary
 import UIKit
 
-open class CoreGridView : UICollectionViewCell, SpotConfigurable {
+open class CoreGridView : UICollectionViewCell, ItemConfigurable {
 
   public var preferredViewSize: CGSize = CGSize(width: 200, height: 285)
 

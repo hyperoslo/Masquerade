@@ -1,4 +1,3 @@
-import Brick
 import Spots
 import Tailor
 import UIKit
@@ -7,7 +6,7 @@ public protocol ButtonListViewDelegate: class {
   func buttonListViewDidPress(_ view: ButtonListView)
 }
 
-open class ButtonListView: UITableViewCell, SpotConfigurable {
+open class ButtonListView: UITableViewCell, ItemConfigurable {
 
   struct Meta: Mappable {
     var styles: String = ""
