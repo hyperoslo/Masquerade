@@ -2,11 +2,11 @@ import Spots
 import Tailor
 import UIKit
 
-public enum InputFieldAlignment: String {
+public enum InputViewAlignment: String {
   case center, left
 }
 
-open class InputFieldListView: View, ItemConfigurable, ViewStateDelegate {
+open class InputView: View, ItemConfigurable {
 
   public enum KeyboardType: String {
     case number
@@ -23,7 +23,7 @@ open class InputFieldListView: View, ItemConfigurable, ViewStateDelegate {
     var keyboardType: KeyboardType = KeyboardType.defaultValue()
     var insets = UIEdgeInsets.zero
     var styles: String = ""
-    var alignment: String = InputFieldAlignment.center.rawValue
+    var alignment: String = InputViewAlignment.center.rawValue
     var staticHeight: Bool = false
 
     required init(_ map: [String : Any]) {
@@ -43,16 +43,6 @@ open class InputFieldListView: View, ItemConfigurable, ViewStateDelegate {
   open lazy var infoLabel: UILabel = UILabel()
   open lazy var textField: UITextField = UITextField()
   open lazy var loadingView = UIView()
-
-  /// Invoked when ever a view state is changed.
-  ///
-  /// - parameter viewState: The current view state.
-  public func viewStateDidChange(_ viewState: ViewState) {
-    if viewState == .selected {
-      isUserInteractionEnabled = true
-      textField.becomeFirstResponder()
-    }
-  }
 
   lazy var gradient: CAGradientLayer = {
     let gradient = CAGradientLayer()
@@ -140,7 +130,7 @@ open class InputFieldListView: View, ItemConfigurable, ViewStateDelegate {
     infoLabel.text = item.title
     infoLabel.sizeToFit()
 
-    if meta.alignment == InputFieldAlignment.center.rawValue {
+    if meta.alignment == InputViewAlignment.center.rawValue {
       infoLabel.centerInSuperview()
     }
     infoLabel.frame.origin.y = meta.insets.top
@@ -155,7 +145,7 @@ open class InputFieldListView: View, ItemConfigurable, ViewStateDelegate {
       ])
     textField.attributedPlaceholder = placeholderText
 
-    if meta.alignment == InputFieldAlignment.center.rawValue {
+    if meta.alignment == InputViewAlignment.center.rawValue {
       infoLabel.centerInSuperview()
       infoLabel.frame.origin.y = infoLabel.frame.origin.y - 7.5
     }
