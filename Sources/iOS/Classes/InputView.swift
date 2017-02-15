@@ -2,11 +2,11 @@ import Spots
 import Tailor
 import UIKit
 
-public enum InputFieldAlignment: String {
+public enum InputViewAlignment: String {
   case center, left
 }
 
-open class InputFieldListView: UITableViewCell, ItemConfigurable {
+open class InputView: View, ItemConfigurable {
 
   public enum KeyboardType: String {
     case number
@@ -23,7 +23,7 @@ open class InputFieldListView: UITableViewCell, ItemConfigurable {
     var keyboardType: KeyboardType = KeyboardType.defaultValue()
     var insets = UIEdgeInsets.zero
     var styles: String = ""
-    var alignment: String = InputFieldAlignment.center.rawValue
+    var alignment: String = InputViewAlignment.center.rawValue
     var staticHeight: Bool = false
 
     required init(_ map: [String : Any]) {
@@ -99,7 +99,7 @@ open class InputFieldListView: UITableViewCell, ItemConfigurable {
         loadingView.layer.insertSublayer(gradient, at: 0)
         loadingView.alpha = 0.0
 
-        contentView.addSubview(loadingView)
+        addSubview(loadingView)
         textField.alpha = 0.0
         loadingView.alpha = 1.0
       } else {
@@ -113,12 +113,9 @@ open class InputFieldListView: UITableViewCell, ItemConfigurable {
     }
   }
 
-  override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-    super.init(style: style, reuseIdentifier: reuseIdentifier)
-    selectedBackgroundView = UIView()
-    selectedBackgroundView?.backgroundColor = UIColor.clear
-    selectionStyle = .none
-    [infoLabel, textField].forEach { contentView.addSubview($0) }
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    [infoLabel, textField].forEach { addSubview($0) }
   }
 
   required public init?(coder aDecoder: NSCoder) {
@@ -133,13 +130,13 @@ open class InputFieldListView: UITableViewCell, ItemConfigurable {
     infoLabel.text = item.title
     infoLabel.sizeToFit()
 
-    if meta.alignment == InputFieldAlignment.center.rawValue {
+    if meta.alignment == InputViewAlignment.center.rawValue {
       infoLabel.centerInSuperview()
     }
     infoLabel.frame.origin.y = meta.insets.top
 
     textField.sizeToFit()
-    textField.frame.size.width = contentView.frame.size.width
+    textField.frame.size.width = frame.size.width
     textField.text = item.text
 
     let placeholderText = NSAttributedString(string: item.subtitle,
@@ -148,7 +145,7 @@ open class InputFieldListView: UITableViewCell, ItemConfigurable {
       ])
     textField.attributedPlaceholder = placeholderText
 
-    if meta.alignment == InputFieldAlignment.center.rawValue {
+    if meta.alignment == InputViewAlignment.center.rawValue {
       infoLabel.centerInSuperview()
       infoLabel.frame.origin.y = infoLabel.frame.origin.y - 7.5
     }

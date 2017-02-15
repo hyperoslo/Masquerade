@@ -6,7 +6,7 @@ public protocol ButtonListViewDelegate: class {
   func buttonListViewDidPress(_ view: ButtonListView)
 }
 
-open class ButtonListView: UITableViewCell, ItemConfigurable {
+open class ButtonListView: View, ItemConfigurable {
 
   struct Meta: Mappable {
     var styles: String = ""
@@ -20,7 +20,6 @@ open class ButtonListView: UITableViewCell, ItemConfigurable {
 
   public weak var delegate: ButtonListViewDelegate? {
     didSet {
-      selectionStyle = delegate == nil ? .default : .none
       button.isUserInteractionEnabled = delegate != nil
     }
   }
@@ -48,37 +47,17 @@ open class ButtonListView: UITableViewCell, ItemConfigurable {
 
   public lazy var loadingIndicator = UIActivityIndicatorView()
 
-  override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-    super.init(style: style, reuseIdentifier: reuseIdentifier)
-    selectionStyle = .default
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+
     button.isUserInteractionEnabled = false
-    contentView.addSubview(button)
+    addSubview(button)
     button.addSubview(loadingIndicator)
     backgroundColor = UIColor.clear
   }
 
   required public init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
-  }
-
-  override open func setHighlighted(_ highlighted: Bool, animated: Bool) {
-    super.setHighlighted(false, animated: false)
-
-    guard delegate == nil else {
-      return
-    }
-
-    button.isHighlighted = highlighted
-  }
-
-  override open func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(false, animated: false)
-
-    guard delegate == nil else {
-      return
-    }
-
-    button.isSelected = selected
   }
 
   public func configure(_ item: inout Item) {
