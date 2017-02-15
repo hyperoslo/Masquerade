@@ -6,7 +6,7 @@ public enum InputFieldAlignment: String {
   case center, left
 }
 
-open class InputFieldListView: UITableViewCell, ItemConfigurable {
+open class InputFieldListView: View, ItemConfigurable, ViewStateDelegate {
 
   public enum KeyboardType: String {
     case number
@@ -43,6 +43,16 @@ open class InputFieldListView: UITableViewCell, ItemConfigurable {
   open lazy var infoLabel: UILabel = UILabel()
   open lazy var textField: UITextField = UITextField()
   open lazy var loadingView = UIView()
+
+  /// Invoked when ever a view state is changed.
+  ///
+  /// - parameter viewState: The current view state.
+  public func viewStateDidChange(_ viewState: ViewState) {
+    if viewState == .selected {
+      isUserInteractionEnabled = true
+      textField.becomeFirstResponder()
+    }
+  }
 
   lazy var gradient: CAGradientLayer = {
     let gradient = CAGradientLayer()
@@ -99,7 +109,7 @@ open class InputFieldListView: UITableViewCell, ItemConfigurable {
         loadingView.layer.insertSublayer(gradient, at: 0)
         loadingView.alpha = 0.0
 
-        contentView.addSubview(loadingView)
+        addSubview(loadingView)
         textField.alpha = 0.0
         loadingView.alpha = 1.0
       } else {
@@ -113,12 +123,9 @@ open class InputFieldListView: UITableViewCell, ItemConfigurable {
     }
   }
 
-  override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-    super.init(style: style, reuseIdentifier: reuseIdentifier)
-    selectedBackgroundView = UIView()
-    selectedBackgroundView?.backgroundColor = UIColor.clear
-    selectionStyle = .none
-    [infoLabel, textField].forEach { contentView.addSubview($0) }
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    [infoLabel, textField].forEach { addSubview($0) }
   }
 
   required public init?(coder aDecoder: NSCoder) {
@@ -139,7 +146,7 @@ open class InputFieldListView: UITableViewCell, ItemConfigurable {
     infoLabel.frame.origin.y = meta.insets.top
 
     textField.sizeToFit()
-    textField.frame.size.width = contentView.frame.size.width
+    textField.frame.size.width = frame.size.width
     textField.text = item.text
 
     let placeholderText = NSAttributedString(string: item.subtitle,
