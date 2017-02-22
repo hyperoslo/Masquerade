@@ -7,22 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD218F8C1DB5FFF500DFAECA /* Brick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F8B1DB5FFF500DFAECA /* Brick.framework */; };
 		BD218F8E1DB6006500DFAECA /* Hue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F8D1DB6006500DFAECA /* Hue.framework */; };
 		BD218F901DB600C600DFAECA /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F8F1DB600C600DFAECA /* Cartography.framework */; };
 		BD218F921DB6010200DFAECA /* Fashion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD218F911DB6010200DFAECA /* Fashion.framework */; };
 		BD6F86A71DB822BD00222E22 /* Item+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */; };
 		BD6F86A81DB822BD00222E22 /* Item+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */; };
-		BD9B54A61DDAFC1200FCAE46 /* ButtonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B549C1DDAFC1200FCAE46 /* ButtonListView.swift */; };
 		BD9B54A71DDAFC1200FCAE46 /* CoreGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B549D1DDAFC1200FCAE46 /* CoreGridView.swift */; };
 		BD9B54A81DDAFC1200FCAE46 /* CoreListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B549E1DDAFC1200FCAE46 /* CoreListView.swift */; };
 		BD9B54A91DDAFC1200FCAE46 /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B549F1DDAFC1200FCAE46 /* ImageListView.swift */; };
 		BD9B54AA1DDAFC1200FCAE46 /* InfoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B54A01DDAFC1200FCAE46 /* InfoListView.swift */; };
-		BD9B54AB1DDAFC1200FCAE46 /* InputListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B54A11DDAFC1200FCAE46 /* InputListView.swift */; };
 		BD9B54AC1DDAFC1200FCAE46 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B54A21DDAFC1200FCAE46 /* ListView.swift */; };
 		BD9B54AD1DDAFC1200FCAE46 /* ToggleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B54A31DDAFC1200FCAE46 /* ToggleListView.swift */; };
 		BD9B54AE1DDAFC1200FCAE46 /* UIView+CenterInSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9B54A51DDAFC1200FCAE46 /* UIView+CenterInSuperview.swift */; };
 		D2A5A07E1E29023100350B6A /* TextListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5A07D1E29023100350B6A /* TextListView.swift */; };
+		D2FEF7901E5E3A9500D81EA6 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF78E1E5E3A9500D81EA6 /* ButtonView.swift */; };
+		D2FEF7911E5E3A9500D81EA6 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FEF78F1E5E3A9500D81EA6 /* InputView.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Masquerade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Masquerade.framework */; };
 		D5C6294A1C3A7FAA007F7B7C /* Masquerade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Masquerade.framework */; };
 		D5C629851C3A893F007F7B7C /* Mac.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629841C3A893F007F7B7C /* Mac.swift */; };
@@ -57,16 +56,16 @@
 		BD218F8F1DB600C600DFAECA /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
 		BD218F911DB6010200DFAECA /* Fashion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fashion.framework; path = Carthage/Build/iOS/Fashion.framework; sourceTree = "<group>"; };
 		BD6F86A61DB822BD00222E22 /* Item+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+Extensions.swift"; sourceTree = "<group>"; };
-		BD9B549C1DDAFC1200FCAE46 /* ButtonListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonListView.swift; sourceTree = "<group>"; };
 		BD9B549D1DDAFC1200FCAE46 /* CoreGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGridView.swift; sourceTree = "<group>"; };
 		BD9B549E1DDAFC1200FCAE46 /* CoreListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreListView.swift; sourceTree = "<group>"; };
 		BD9B549F1DDAFC1200FCAE46 /* ImageListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
 		BD9B54A01DDAFC1200FCAE46 /* InfoListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoListView.swift; sourceTree = "<group>"; };
-		BD9B54A11DDAFC1200FCAE46 /* InputListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputListView.swift; sourceTree = "<group>"; };
 		BD9B54A21DDAFC1200FCAE46 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		BD9B54A31DDAFC1200FCAE46 /* ToggleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleListView.swift; sourceTree = "<group>"; };
 		BD9B54A51DDAFC1200FCAE46 /* UIView+CenterInSuperview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+CenterInSuperview.swift"; sourceTree = "<group>"; };
 		D2A5A07D1E29023100350B6A /* TextListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextListView.swift; sourceTree = "<group>"; };
+		D2FEF78E1E5E3A9500D81EA6 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		D2FEF78F1E5E3A9500D81EA6 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D5B2E89F1C3A780C00C0327D /* Masquerade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masquerade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,7 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD218F8C1DB5FFF500DFAECA /* Brick.framework in Frameworks */,
 				BD218F901DB600C600DFAECA /* Cartography.framework in Frameworks */,
 				BD218F921DB6010200DFAECA /* Fashion.framework in Frameworks */,
 				BD218F8E1DB6006500DFAECA /* Hue.framework in Frameworks */,
@@ -145,12 +143,12 @@
 		BD9B549B1DDAFC1200FCAE46 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BD9B549C1DDAFC1200FCAE46 /* ButtonListView.swift */,
+				D2FEF78E1E5E3A9500D81EA6 /* ButtonView.swift */,
+				D2FEF78F1E5E3A9500D81EA6 /* InputView.swift */,
 				BD9B549D1DDAFC1200FCAE46 /* CoreGridView.swift */,
 				BD9B549E1DDAFC1200FCAE46 /* CoreListView.swift */,
 				BD9B549F1DDAFC1200FCAE46 /* ImageListView.swift */,
 				BD9B54A01DDAFC1200FCAE46 /* InfoListView.swift */,
-				BD9B54A11DDAFC1200FCAE46 /* InputListView.swift */,
 				BD9B54A21DDAFC1200FCAE46 /* ListView.swift */,
 				BD9B54A31DDAFC1200FCAE46 /* ToggleListView.swift */,
 				D2A5A07D1E29023100350B6A /* TextListView.swift */,
@@ -440,7 +438,6 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Brick.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Spots.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Tailor.framework",
 			);
@@ -477,13 +474,13 @@
 				BD6F86A71DB822BD00222E22 /* Item+Extensions.swift in Sources */,
 				D5C629871C3A89A8007F7B7C /* Shared.swift in Sources */,
 				BD9B54AA1DDAFC1200FCAE46 /* InfoListView.swift in Sources */,
-				BD9B54A61DDAFC1200FCAE46 /* ButtonListView.swift in Sources */,
 				BD9B54A81DDAFC1200FCAE46 /* CoreListView.swift in Sources */,
-				BD9B54AB1DDAFC1200FCAE46 /* InputListView.swift in Sources */,
 				BD9B54AD1DDAFC1200FCAE46 /* ToggleListView.swift in Sources */,
 				D2A5A07E1E29023100350B6A /* TextListView.swift in Sources */,
+				D2FEF7901E5E3A9500D81EA6 /* ButtonView.swift in Sources */,
 				BD9B54A91DDAFC1200FCAE46 /* ImageListView.swift in Sources */,
 				BD9B54A71DDAFC1200FCAE46 /* CoreGridView.swift in Sources */,
+				D2FEF7911E5E3A9500D81EA6 /* InputView.swift in Sources */,
 				BD9B54AC1DDAFC1200FCAE46 /* ListView.swift in Sources */,
 				BD9B54AE1DDAFC1200FCAE46 /* UIView+CenterInSuperview.swift in Sources */,
 			);
