@@ -1,6 +1,12 @@
 import Spots
 import Tailor
 
+#if os(macOS)
+  import Cocoa
+#else
+  import UIKit
+#endif
+
 public extension Item {
 
   var styles: String {
