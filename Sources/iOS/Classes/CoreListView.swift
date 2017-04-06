@@ -4,7 +4,7 @@ import Spots
 import Tailor
 import UIKit
 
-open class CoreListView: ListComponentCell {
+open class CoreListView: DefaultItemView {
 
   var topMargin: CGFloat = 5
   var leftMargin: CGFloat = 7.5
